@@ -1,0 +1,49 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="mysql:8" type="docker-deploy" factoryName="docker-image" server-name="Docker">
+    <deployment type="docker-image">
+      <settings>
+        <option name="imageTag" value="mysql:8" />
+        <option name="command" value="mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci" />
+        <option name="containerName" value="mysql8" />
+        <option name="envVars">
+          <list>
+            <DockerEnvVarImpl>
+              <option name="name" value="MYSQL_ROOT_PASSWORD" />
+              <option name="value" value="waibibabo" />
+            </DockerEnvVarImpl>
+          </list>
+        </option>
+        <option name="portBindings">
+          <list>
+            <DockerPortBindingImpl>
+              <option name="containerPort" value="3306" />
+              <option name="hostPort" value="3306" />
+            </DockerPortBindingImpl>
+          </list>
+        </option>
+        <option name="commandLineOptions" value="--restart=always" />
+        <option name="volumeBindings">
+          <list>
+            <DockerVolumeBindingImpl>
+              <option name="containerPath" value="/var/lib/mysql" />
+              <option name="hostPath" value="C:\Users\hsuhau\Docker\MySQL\8\data" />
+            </DockerVolumeBindingImpl>
+            <DockerVolumeBindingImpl>
+              <option name="containerPath" value="/etc/mysql" />
+              <option name="hostPath" value="C:\Users\hsuhau\Docker\MySQL\8\config" />
+            </DockerVolumeBindingImpl>
+            <DockerVolumeBindingImpl>
+              <option name="containerPath" value="/var/lib/mysql-files" />
+              <option name="hostPath" value="C:\Users\hsuhau\Docker\MySQL\8\mysql-files" />
+            </DockerVolumeBindingImpl>
+            <DockerVolumeBindingImpl>
+              <option name="containerPath" value="/var/log/mysql" />
+              <option name="hostPath" value="C:\Users\hsuhau\Docker\MySQL\8\log" />
+            </DockerVolumeBindingImpl>
+          </list>
+        </option>
+      </settings>
+    </deployment>
+    <method v="2" />
+  </configuration>
+</component>

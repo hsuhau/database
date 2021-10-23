@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="stpm正式库@10.65.8.30" uuid="71c7c801-3f0f-4ccc-a68b-3c7c4a6c5cfb">
+    <data-source source="LOCAL" name="stpm正式库@10.65.8.30:1521" uuid="71c7c801-3f0f-4ccc-a68b-3c7c4a6c5cfb">
       <driver-ref>oracle.19</driver-ref>
       <synchronize>true</synchronize>
       <auto-commit>false</auto-commit>
@@ -9,7 +9,7 @@
       <jdbc-url>jdbc:oracle:thin:@10.65.8.30:1521:fox</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
-    <data-source source="LOCAL" name="stpm测试库@10.65.119.44" uuid="2edb488f-314b-465e-9115-1a896e41686a">
+    <data-source source="LOCAL" name="stpm测试库@10.65.119.44:1521" uuid="2edb488f-314b-465e-9115-1a896e41686a">
       <driver-ref>oracle.19</driver-ref>
       <synchronize>true</synchronize>
       <auto-commit>false</auto-commit>
@@ -17,7 +17,7 @@
       <jdbc-url>jdbc:oracle:thin:@10.65.119.44:1521:fox</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
-    <data-source source="LOCAL" name="aps@10.65.119.44" uuid="ab07ba7e-62b2-427c-a2b4-ab68b72f96fb">
+    <data-source source="LOCAL" name="aps@10.65.119.44:3305" uuid="ab07ba7e-62b2-427c-a2b4-ab68b72f96fb">
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
       <remarks>aps数据库</remarks>
@@ -25,7 +25,7 @@
       <jdbc-url>jdbc:mysql://10.65.119.44:3305/aps</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
-    <data-source source="LOCAL" name="root@localhost" uuid="e3b59296-a80c-4983-b78d-ed063af94d3b">
+    <data-source source="LOCAL" name="root@localhost:3306" uuid="e3b59296-a80c-4983-b78d-ed063af94d3b">
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
       <remarks>本地MySQL</remarks>
@@ -33,25 +33,18 @@
       <jdbc-url>jdbc:mysql://localhost:3306</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
-    <data-source source="LOCAL" name="Apache Spark - @localhost" uuid="5b93f282-1b77-4c94-9c73-fdf0b3c9d2be">
-      <driver-ref>spark</driver-ref>
-      <synchronize>true</synchronize>
-      <jdbc-driver>org.apache.hive.jdbc.HiveDriver</jdbc-driver>
-      <jdbc-url>jdbc:hive2://localhost:10000</jdbc-url>
-      <working-dir>$ProjectFileDir$</working-dir>
-    </data-source>
-    <data-source source="LOCAL" name="mongodb@localhost" uuid="7b0b9029-0e9c-44f1-bba3-e584450df851">
+    <data-source source="LOCAL" name="@localhost:27017" uuid="7b0b9029-0e9c-44f1-bba3-e584450df851">
       <driver-ref>mongo</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.dbschema.MongoJdbcDriver</jdbc-driver>
       <jdbc-url>mongodb://localhost:27017</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
-    <data-source source="LOCAL" name="hive@localhost" uuid="4bb68b53-9063-496c-9660-3f3bd9529364">
-      <driver-ref>hive</driver-ref>
+    <data-source source="LOCAL" name="@localhost:9200" uuid="86e5092e-9d50-4d71-863c-b8829c3e32a8">
+      <driver-ref>elasticsearch</driver-ref>
       <synchronize>true</synchronize>
-      <jdbc-driver>org.apache.hive.jdbc.HiveDriver</jdbc-driver>
-      <jdbc-url>jdbc:hive2://localhost:10000</jdbc-url>
+      <jdbc-driver>org.elasticsearch.xpack.sql.jdbc.EsDriver</jdbc-driver>
+      <jdbc-url>jdbc:es://localhost:9200/</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>
