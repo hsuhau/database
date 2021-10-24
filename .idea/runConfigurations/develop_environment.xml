@@ -4,7 +4,7 @@
       <settings>
         <option name="imageTag" value="develop-environment" />
         <option name="containerName" value="develop-environment" />
-        <option name="entrypoint" value="/etc/init.d/ssh restart" />
+        <option name="entrypoint" value="" />
         <option name="portBindings">
           <list>
             <DockerPortBindingImpl>
