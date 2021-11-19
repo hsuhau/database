@@ -34,8 +34,6 @@ RUN apt update && apt install -y \
     git \
     python3 \
     golang \
-    openjdk-17-jdk \
-    openjdk-11-jdk \
     openjdk-8-jdk \
     maven \
     gradle \
@@ -45,7 +43,6 @@ RUN apt update && apt install -y \
     gcc \
     gdb \
     cmake
-
 
 # 为 root 安装 oh-my-zsh
 RUN git clone https://gitee.com/mirrors/oh-my-zsh.git ~/.oh-my-zsh \
